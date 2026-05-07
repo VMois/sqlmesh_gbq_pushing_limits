@@ -1,0 +1,28 @@
+virtual_environment_mode: dev_only
+
+gateways:
+  location_eu:
+    variables:
+      location: EU
+    connection:
+      type: bigquery
+      project: sqlmesh-495521
+  location_us:
+    variables:
+      location: US
+    connection:
+      type: bigquery
+      project: sqlmesh-495521
+
+model_defaults:
+  dialect: bigquery
+  start: 2026-05-05 # Start date for backfill history
+  cron: '@daily'    # Run models daily at 12am UTC (can override per model)
+
+
+linter:
+  enabled: true
+  rules:
+    - ambiguousorinvalidcolumn
+    - invalidselectstarexpansion
+    - noambiguousprojections

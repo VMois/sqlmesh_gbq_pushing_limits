@@ -1,0 +1,9 @@
+[project]
+name = "sqlmesh-gbq-pushing-limits"
+version = "0.1.0"
+description = "Trying to see how SQLMesh deals with GBQ"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "sqlmesh[bigquery,web]>=0.234.1",
+]

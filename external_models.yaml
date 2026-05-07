@@ -1,0 +1,18 @@
+- name: '`sqlmesh-495521`.`MyData_EU`.`product_usage`'
+  columns:
+    product_id: STRING
+    customer_id: STRING
+    last_usage_date: TIMESTAMP
+    usage_count: INT64
+    feature_utilization_score: FLOAT64
+    user_segment: STRING
+  gateway: location_eu
+- name: '`sqlmesh-495521`.`MyData_US`.`product_usage`'
+  columns:
+    product_id: STRING
+    customer_id: STRING
+    last_usage_date: TIMESTAMP
+    usage_count: INT64
+    feature_utilization_score: FLOAT64
+    user_segment: STRING
+  gateway: location_us
