@@ -23,3 +23,6 @@ Raw data tables are located in the `setup/` folder. Execute these SQL files dire
   - SQLMesh will produce NO errors or warnings about the drift
   - This can lead to inconsistencies between your codebase and actual database objects
   - **Best practice**: Always make changes through SQLMesh model files, never directly in BigQuery
+
+### Environment Configuration
+- **Virtual environment mode**: Set to `dev_only` in config.yaml. This ensures prod environment maps 1-1 to actual tables/views instead of using virtual table layers, while dev environments can still use virtual environments for isolated testing.
