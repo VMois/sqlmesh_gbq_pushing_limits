@@ -1,4 +1,6 @@
-# SQLMesh GBQ - pushing the limits
+# SQLMesh GBQ - pushing the limits and experimenting
+
+This repo contains basic implementing of custom materialization of BigQuery TVF support.
 
 ## Setup
 
